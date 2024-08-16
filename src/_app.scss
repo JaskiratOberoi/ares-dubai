@@ -1,0 +1,26 @@
+.app {
+  width: 97%;
+  height: 97vh;
+  border-radius: 15px;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #1b1f20 0%, #000000 76%);
+  color: #f1f1f1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    font-size: 10vw;
+
+    background: $gold;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+
+    .cs {
+      font-size: 7vw;
+    }
+  }
+}
