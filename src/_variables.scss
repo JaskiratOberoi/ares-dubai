@@ -15,6 +15,22 @@ $gold: radial-gradient(
     #5d4a1f 62.5%,
     #5d4a1f 100%
   );
+
+// linear gold
+@mixin liner-gold {
+  background: rgb(93, 74, 31);
+  background: linear-gradient(
+    140deg,
+    rgba(93, 74, 31, 1) 0%,
+    rgba(253, 185, 49, 1) 17%,
+    rgba(253, 185, 49, 1) 32%,
+    rgba(233, 192, 0, 1) 48%,
+    rgba(253, 185, 49, 1) 62%,
+    rgba(253, 185, 49, 1) 80%,
+    rgba(93, 74, 31, 1) 100%
+  );
+}
+
 // Self confidence gold
 @mixin self-confidence {
   background-color: #facc6b;
@@ -26,4 +42,13 @@ $gold: radial-gradient(
   flex-direction: $dir;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

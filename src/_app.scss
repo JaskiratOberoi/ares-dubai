@@ -14,13 +14,17 @@
   .title {
     font-size: 10vw;
 
-    background: $gold;
+    @include liner-gold;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient 5s ease infinite;
+
+    background-size: 400% 400%;
+    animation: fadeIn 1.5s linear 0s 1 forwards, gradient 5s ease infinite 1.6s;
 
     .cs {
       font-size: 7vw;
+
+      // animation: fadeIn 2s linear 0s 1 forwards;
     }
   }
 }
